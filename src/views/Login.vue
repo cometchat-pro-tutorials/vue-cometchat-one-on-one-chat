@@ -6,7 +6,7 @@
           Welcome Back
         </h1>
         <p class="description">
-          To access this demo, you can use one of the following four users: <strong>superhero1</strong>, <strong>superhero2</strong>, <strong>superhero3</strong>, or <strong>superhero4</strong>.
+          To access this demo, you can use one of the following five users: <strong>superhero1</strong>, <strong>superhero2</strong>, <strong>superhero3</strong>, <strong>superhero4</strong>, or <strong>superhero5</strong>.
         </p>
         <form
           class="login-form"
@@ -117,6 +117,14 @@ export default {
   color: #2D313F
   font-size: 26px
   line-height: 35px
+
+.description
+  font-family: 'Roboto', sans-serif
+  color: #444
+  line-height: 1.4
+
+.description strong
+  font-weight: 500
 
 .login-button
   font-family: 'Roboto', sans-serif

@@ -9,7 +9,7 @@
         :key="user.uid"
         class="contact-item"
         :class="{
-          'active': user.uid === (activeContact && activeContact.uid),
+          'active': user.uid === activeContactId,
           'online': user.isOnline
         }"
         @click="$emit('select-contact', user.uid)"
@@ -36,8 +36,8 @@ export default {
       default: () => ([])
     },
 
-    activeContact: {
-      type: Object,
+    activeContactId: {
+      type: String,
       default: null
     }
   }

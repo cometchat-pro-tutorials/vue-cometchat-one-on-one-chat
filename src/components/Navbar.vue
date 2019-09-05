@@ -11,7 +11,7 @@
     </div>
     <div class="right">
       <span class="welcome-message">
-        Welcome <strong>{{ $currentUser.name }}</strong>
+        Welcome <strong class="user-name">{{ $currentUser.name }}</strong>
       </span>
       <spinner
         v-if="loggingOut"
@@ -65,6 +65,7 @@ export default {
   display: flex
   justify-content: space-between
   align-items: center
+  font-family: 'Roboto', sans-serif
 
 .left, .right
   display: flex
@@ -83,6 +84,9 @@ export default {
 
 .welcome-message
   margin-right: 10px
+
+.user-name
+  font-weight: 500
 
 .avatar
   width: 30px

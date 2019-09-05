@@ -7,8 +7,8 @@
     <div class="chat-container">
       <chat-sidebar
         :contacts="contacts"
-        :active-contact="activeContact"
-        @select-contact="activeContactUid = arguments[0]"
+        :active-contact-id="activeContactUid"
+        @select-contact="setActiveContactUid"
       />
       <chat-main :active-contact="activeContact"/>
     </div>
@@ -94,6 +94,10 @@ export default {
           }))
           this.activeContactUid = this.contacts[0].uid
         })
+    },
+
+    setActiveContactUid (uid) {
+      this.activeContactUid = uid
     }
   }
 }
