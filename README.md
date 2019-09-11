@@ -1,6 +1,6 @@
 # Build one-on-one chat in your Vue app
 
-This is the demo app that we build in the [Build one-on-one chat in your Vue app](https://www.cometchat.com/tutorials/build-one-on-one-vue-chat-app/) tutorial.
+This is the demo app that we build in the [Build one-on-one chat in your Vue app](https://www.cometchat.com/tutorials/vue-one-on-one-chat-tutorial/) tutorial.
 
 ![](screenshots/main.png)
 
